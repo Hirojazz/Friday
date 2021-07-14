@@ -47,7 +47,7 @@ async def set_afk(client, message):
     afk_start = start_1.replace(microsecond=0)
     log = LogIt(message)
     if msge:
-        msg = f"**My Master Seems To Be Too Busy 👀.** \n__He Going Afk Because Of__ `{msge}`"
+        msg = f"**My Master Seems To Be Too Busy 👀.** \n__She is Going Afk Because Of__ `{msge}`"
         await log.log_msg(
             client,
             f"#AfkLogger Afk Is Active And Reason is {msge}",
@@ -99,9 +99,9 @@ async def afk_er(client, message):
     total_afk_time = str((afk_end - afk_start))
     afk_since = "**a while ago**"
     message_to_reply = (
-        f"I Am **[AFK]** Right Now. \n**Last Seen :** `{total_afk_time}`\n**Reason** : `{reason}`"
+        f"I Am **Dead**Right Now[.](https://telegra.ph/file/af5520db6206ff5683dd6.jpg) \n**Last Seen :** `{total_afk_time}`\n**Reason** : `{reason}`"
         if reason
-        else f"I Am **[AFK]** Right Now. \n**Last Seen :** `{total_afk_time}`"
+        else f"I Am **Dead** Right Now. \n**Last Seen :** `{total_afk_time}`"
     )
     LL = await message.reply(message_to_reply)
 
